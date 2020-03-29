@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string ad, soyad;
+            double boy, boy2018, boy2019, boy2020, boy2021;
+
+            Console.WriteLine();
+            Console.WriteLine("******* 2021 Boyunu Öğren! ********");
+            Console.Write("Ad : ");
+            ad = Console.ReadLine();
+            Console.Write("Soyad : ");
+            soyad = Console.ReadLine();
+            Console.Write("Boy : ");
+            boy = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.WriteLine("*********Yıla Göre Boyun Kac**********");
+            Console.Write("2018 : ");
+            boy2018 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("2019 : ");
+            boy2019 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("2020 : ");
+            boy2020 = Convert.ToDouble(Console.ReadLine());
+
+            boy2021 = boy2020 + 2;
+
+            Console.WriteLine("**************2021 : {0}****************", boy2021);
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
